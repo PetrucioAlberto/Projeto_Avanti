@@ -199,12 +199,15 @@ Cypress.Commands.add('PreencherDaosDoCartao',function(){
     cy.get('#userDetails > :nth-child(3) > .ng-binding').should('be.visible').invoke('text').as('11936564059');
     cy.get('.mobileBtnHandler > #next_btn').click();
     cy.get('[data-ng-click="imgRadioButton = 2; checkedRadio = 2"] > input').click();
+    cy.wait(1000);
     cy.get('#creditCard').type('111122223333');
-    cy.get('[name="cvv_number"]').type('321');
+    cy.get('[name="cvv_number"]').type('3321');
+    cy.wait(1000);
     cy.get('[a-hint="MM"] > .inputContainer > .ng-pristine').select('06')
     cy.get('[a-hint="YYYY"] > .inputContainer > .ng-pristine').select('2030')
+    cy.wait(1000);
     cy.get('[a-hint="Cardholder name"] > .inputContainer > label').type('JoaoSilva');  
-    cy.wait(2000);    
+    cy.wait(1000);    
 })
 // CT017
 Cypress.Commands.add('MenssagemCompraConcluida',function(){
@@ -217,16 +220,16 @@ Cypress.Commands.add('MenssagemCompraConcluida',function(){
 
 Cypress.Commands.add('DeletarConta',function(){
     cy.get('.desktop-handler > :nth-child(3)').click();
-    cy.wait(2000)
+    cy.wait(1000)
     cy.get('#loginMiniTitle > [translate="My_account"]').click()
-    cy.wait(2000)
+    cy.wait(1000)
     cy.get('.select').should('be.visible');
     cy.get('.desktop-handler > :nth-child(3)').invoke('text').as('MY ACCOUNT').then((texto)=>{
       console.log('Texto capturado', texto);
     })
     cy.get('.deleteMainBtnContainer').click(); 
     cy.get('.deleteRed').click()
-    cy.wait(2000)
+    cy.wait(1000)
     cy.get('.successfulDeleteMessage > .deleteAccountPopupContent > p').invoke('text').as('Account deleted successfully').then((texto) =>{
       console.log('Texto capturado', texto);
     })
@@ -239,7 +242,7 @@ Cypress.Commands.add('DeletarConta',function(){
 
 Cypress.Commands.add('AcessarLoginParaDeletar',function(){
     cy.visit('https://advantageonlineshopping.com/#/');
-    cy.wait(2000);
+    cy.wait(1000);
     cy.get('.logoDemo').should("be.visible");
     cy.get("#menuUserLink").click(); // clicar no botao user
     cy.get('[a-hint="Username"] > .inputContainer > .ng-pristine').type('JoaoSilva');
@@ -249,7 +252,7 @@ Cypress.Commands.add('AcessarLoginParaDeletar',function(){
 
 Cypress.Commands.add('MenssagemContadeletada',function(){
     cy.get('#signInResultMessage').invoke('text').as('Incorrect user name or password.') 
-    cy.wait(2000);
+    cy.wait(1000);
     cy.screenshot({ capture: 'viewport' });    
 })
 
