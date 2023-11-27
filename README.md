@@ -34,4 +34,3 @@ Agradecemos a contribuição dos seguintes membros para o desenvolvimento do Adv
 - [Nome do Membro 3](link-do-perfil-no-github)
   
 
-Sinta-se à vontade para explorar, contribuir e fornecer feedback. Obrigado por escolher o AdvantageDemo para suas necessidades de compras online de produtos de computador!
