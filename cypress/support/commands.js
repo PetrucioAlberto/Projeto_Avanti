@@ -200,7 +200,7 @@ Cypress.Commands.add('PreencherDaosDoCartao',function(){
     cy.get('.mobileBtnHandler > #next_btn').click();
     cy.get('[data-ng-click="imgRadioButton = 2; checkedRadio = 2"] > input').click();
     cy.get('#creditCard').type('111122223333');
-    cy.get('[name="cvv_number"]').type('3321');
+    cy.get('[name="cvv_number"]').type('321');
     cy.get('[a-hint="MM"] > .inputContainer > .ng-pristine').select('06')
     cy.get('[a-hint="YYYY"] > .inputContainer > .ng-pristine').select('2030')
     cy.get('[a-hint="Cardholder name"] > .inputContainer > label').type('JoaoSilva');  
