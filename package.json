@@ -1,0 +1,14 @@
+{
+  "name": "atividade",
+  "version": "1.0.0",
+  "description": "projeto de teste",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "William Mattos",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^13.5.1"
+  }
+}
