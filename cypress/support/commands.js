@@ -203,12 +203,12 @@ Cypress.Commands.add('PreencherDaosDoCartao',function(){
     cy.get('[name="cvv_number"]').type('3321');
     cy.get('[a-hint="MM"] > .inputContainer > .ng-pristine').select('06')
     cy.get('[a-hint="YYYY"] > .inputContainer > .ng-pristine').select('2030')
-    cy.get('[a-hint="Cardholder name"] > .inputContainer > label').type('JoaoSilva');      
+    cy.get('[a-hint="Cardholder name"] > .inputContainer > label').type('JoaoSilva');  
+    cy.wait(2000);    
 })
 // CT017
 Cypress.Commands.add('MenssagemCompraConcluida',function(){
     cy.get('#pay_now_btn_ManualPayment').click() 
-    cy.wait(2000);
     cy.screenshot({ capture: 'viewport' });
 })
 
@@ -238,6 +238,7 @@ Cypress.Commands.add('DeletarConta',function(){
 
 Cypress.Commands.add('AcessarLoginParaDeletar',function(){
     cy.visit('https://advantageonlineshopping.com/#/');
+    cy.wait(1000);
     cy.get('.logoDemo').should("be.visible");
     cy.get("#menuUserLink").click(); // clicar no botao user
     cy.get('[a-hint="Username"] > .inputContainer > .ng-pristine').type('JoaoSilva');
