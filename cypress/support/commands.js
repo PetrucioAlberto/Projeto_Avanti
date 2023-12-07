@@ -3,8 +3,8 @@
 Cypress.Commands.add('AcessarTelaDeCadastro',function(){
     cy.visit('https://advantageonlineshopping.com/#/');
     cy.get('.logoDemo').should("be.visible");
-    cy.get("#menuUserLink").click(); // clicar no botao user
-    cy.get(".create-new-account").should("be.visible").click();  //  verificar esse nome  create
+    cy.get("#menuUserLink").click(); 
+    cy.get(".create-new-account").should("be.visible").click();  
     cy.get('.create-new-account').invoke('text').as('CREATE NEW ACCOUNT');   
 })
 Cypress.Commands.add('CadastrarUsuario',function(){

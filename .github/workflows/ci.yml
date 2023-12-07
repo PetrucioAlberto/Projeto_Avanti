@@ -1,4 +1,4 @@
-name: Chrome
+name: Chrome 
 on: push
 jobs:
   chrome:
@@ -9,3 +9,5 @@ jobs:
       - uses: cypress-io/github-action@v5
         with:
           browser: chrome
+
+          
