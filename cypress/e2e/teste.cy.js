@@ -10,9 +10,6 @@ describe('home page', ()=>{
 
     it ('criar Pasta')
 
-    //it.only('site', () => {
-     //cy.visit('https://advantageonlineshopping.com/#/');        
-     //});
         it('CT001 - Validar registro com dados válidos', () => {
             cy.AcessarTelaDeCadastro();
             cy.CadastrarUsuario();
