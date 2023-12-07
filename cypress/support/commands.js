@@ -148,7 +148,7 @@ Cypress.Commands.add('RealizarEnvioDoPordutoNoCarrinho',function(){
 // CT014
 Cypress.Commands.add('EscolherQuantidadeProdutoAcimaDoEstoque',function(){
     cy.get('#laptopsImg').click(); // clicar categoria
-    cy.get(':nth-child(1) > :nth-child(4) > .productName').click() // escolher produto
+    cy.get(':nth-child(1) > :nth-child(4) > .productName').click() 
     cy.get('#Description > .roboto-regular').invoke('text').as('HP CHROMEBOOK 14 G1(ENERGY STAR') // qual foi
     cy.get('.BLACK').click() // escolher cor
     cy.get('.colorSelected').should('exist') // escolheu preto?
