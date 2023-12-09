@@ -29,7 +29,7 @@ Estamos trabalhando na adição da documentação completa para este projeto. Fi
 
 Agradecemos a contribuição dos seguintes membros para o desenvolvimento do AdvantageDemo:
 
-- [Nome do Membro 1](link-do-perfil-no-github)
+- [Petrucio Alberto](link-do-perfil-no-github)
 - [Nome do Membro 2](link-do-perfil-no-github)
 - [Nome do Membro 3](link-do-perfil-no-github)
   
